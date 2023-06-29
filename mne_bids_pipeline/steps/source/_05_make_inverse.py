@@ -42,6 +42,7 @@ def get_input_fnames_inverse(
         task=cfg.task,
         acquisition=cfg.acq,
         run=None,
+        processing=cfg.proc,
         recording=cfg.rec,
         space=cfg.space,
         extension=".fif",

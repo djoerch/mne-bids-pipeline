@@ -144,6 +144,7 @@ def run_forward(
         task=cfg.task,
         acquisition=cfg.acq,
         run=None,
+        processing=cfg.proc,
         recording=cfg.rec,
         space=cfg.space,
         extension=".fif",
