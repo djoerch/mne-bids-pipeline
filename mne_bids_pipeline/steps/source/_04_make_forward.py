@@ -94,7 +94,7 @@ def _prepare_trans(
     logger.info(**gen_log_kwargs(message=msg))
 
     trans = get_head_mri_trans(
-        bids_path.copy().update(run=cfg.runs[0], root=cfg.bids_root, extension=None),
+        bids_path.copy().update(run=cfg.runs[0], processing=cfg.proc, root=cfg.bids_root, extension=None),
         t1_bids_path=t1_bids_path,
         fs_subject=cfg.fs_subject,
         fs_subjects_dir=cfg.fs_subjects_dir,
